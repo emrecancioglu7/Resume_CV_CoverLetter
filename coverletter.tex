@@ -1,0 +1,122 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{photo}
+\name{Emre}{CANCIOGLU}
+\position{Software Developer{\enskip\cdotp\enskip}Digital Transformation Expert}
+\address{Kemal Atatürk Mah. 7822 Sok. 7/1, Menemen, İzmir, TÜRKİYE}
+
+\mobile{(+90) 536 702 43 66}
+\email{emrecancioglu7@gmail.com}
+\homepage{www.emrecancioglu.com}
+\linkedin{emrecancioglu}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for [POSITION]}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. [LASTNAME],}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Resume}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Emre CANCIOGLU~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a \textbf{results-driven Senior Operational Technologies Engineer} with over \textbf{6 years of experience} in optimizing industrial systems and driving digital transformation. My expertise spans advanced technologies such as \textbf{IIoT}, \textbf{cloud computing}, and \textbf{data analytics}, and I have a proven track record of achieving significant improvements in operational efficiency and reducing costs. I am proficient in \textbf{full-stack development} (\textbf{Node.js}, \textbf{React}), \textbf{cloud infrastructure} (\textbf{AWS}, \textbf{Kubernetes}), and industry protocols (\textbf{OPC UA}, \textbf{MQTT}, \textbf{Kafka}). Throughout my career, I have led \textbf{digital transformation projects} and implemented scalable solutions that improve \textbf{business intelligence} and enhance \textbf{production performance}. Additionally, I have extensive experience in managing teams, having led a group of \textbf{20 professionals} in the development of a \textbf{web-based digital traceability system}, delivering projects \textbf{on time} and \textbf{within budget} while fostering a \textbf{collaborative} and \textbf{high-performance environment}.
+
+\lettersection{Why [COMPANY NAME]?}
+I am excited about the opportunity to work with \textbf{[COMPANY NAME]} because of your reputation for \textbf{innovation} and \textbf{leadership} in the industry. I am particularly drawn to your commitment to leveraging \textbf{advanced technologies} to drive \textbf{operational excellence}, and I believe my experience with \textbf{IIoT}, \textbf{cloud computing}, and \textbf{data harmonization} aligns well with your mission. The impact of your work in transforming industries through \textbf{cutting-edge solutions} is something that I admire, and I am eager to contribute to this vision while further developing my skills in a \textbf{dynamic} and \textbf{growth-oriented environment}.
+
+\lettersection{Why Me?}
+I believe I am an ideal fit for the \textbf{[POSITION]} position due to my \textbf{strong technical background} and proven ability to deliver \textbf{measurable results}. In my current role at \textbf{INCI GS Yuasa}, I successfully improved \textbf{operational efficiency} by \textbf{19\%} and reduced \textbf{costs} by \textbf{57\%} through the integration of \textbf{automation technologies} and \textbf{real-time data optimization}. I have a passion for leveraging technology to solve \textbf{complex challenges}, and my \textbf{collaborative approach} to project management has allowed me to effectively manage teams. This experience has honed my skills in \textbf{project management}, \textbf{team coordination}, and driving initiatives to successful completion. My experience with both \textbf{software development} and \textbf{operational technologies} gives me a \textbf{unique perspective} that I can bring to your team, helping to drive \textbf{innovation} and enhance \textbf{performance} across your operations.
+
+I would welcome the opportunity to discuss how my skills and experiences align with your needs. Thank you for considering my application. I look forward to the possibility of contributing to the continued success of [COMPANY NAME].
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+\fromsig{\includegraphics[scale=0.15]{ECANCIOGLU.png}}
+\end{document}
