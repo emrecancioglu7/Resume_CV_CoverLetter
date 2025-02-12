@@ -13,7 +13,7 @@ This repository contains a **LaTeX template** for creating a **professional resu
 
 ## ✨ Demo
 
-![Resume](/demoR.png) - ![Cover Letter](/demoCL.png)
+![Demo](/demo.png)
 
 ---
 
