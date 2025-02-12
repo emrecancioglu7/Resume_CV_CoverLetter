@@ -11,6 +11,12 @@ This repository contains a **LaTeX template** for creating a **professional resu
 
 ---
 
+## ✨ Demo
+
+![Resume](/demoR.png) - ![Cover Letter](/demoCL.png)
+
+---
+
 ## 🚀 Installation and Usage  
 
 ### 1️⃣ **Use on Overleaf**  
