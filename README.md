@@ -60,22 +60,28 @@ Example:
 ### 🔹 Best Practices for Bullet Points  
 ✔ Keep descriptions **concise and clear**.  
 ✔ Use **strong action verbs** like *created, designed, debugged, negotiated, developed, managed*.  
-✔ Avoid bullet points that spill onto the next line by **just 1-2 words**.  
+✔ Streamline bullet points that spill over onto the next line by **only 1-2 words**.
 
 ---
 
-## 🎤 STAR Method Interview Example  
+## 🎤 STAR+x Method Interview Example  
 
-The **STAR Method** is a structured approach to answering behavioral interview questions. It stands for **Situation, Task, Action, and Result**.  
+The **STAR+x Method** is an enhanced approach to answering behavioral interview questions, where:  
+- **S** (Situation): Describe the context or problem.  
+- **T** (Task): Explain your responsibility in that situation.  
+- **A** (Action): Detail the steps you took to address the task.  
+- **R** (Result): Highlight the outcome and impact.  
+- **x** (Extended Impact): Show how the solution contributed to long-term sustainability or scalability.  
 
-### Example Question: *"Tell me about a time you solved a challenging problem at work."*  
+### Example Question: *"Tell me about a time you solved a challenging problem at work and ensured long-term success."*  
 
-✅ **Situation**: In my previous role as a software engineer, our team faced a critical bug in production that was affecting 30% of users.
-✅ **Task**: My responsibility was to identify the root cause and deploy a fix within 24 hours.
-✅ **Action**: I analyzed logs, reproduced the issue in a staging environment, and discovered that a recent API update had introduced a breaking change. I implemented a rollback and coordinated with the API provider for a long-term fix.
+✅ **Situation**: In my previous role as a software engineer, our team faced a critical bug in production that was affecting 30% of users.  
+✅ **Task**: My responsibility was to identify the root cause and deploy a fix within 24 hours.  
+✅ **Action**: I analyzed logs, reproduced the issue in a staging environment, and discovered that a recent API update had introduced a breaking change. I implemented a rollback and coordinated with the API provider for a long-term fix.  
 ✅ **Result**: The issue was resolved within 12 hours, reducing customer complaints by 90% and improving system stability.  
+✅ **Extended Impact (x)**: To prevent future occurrences, I introduced an automated regression test suite and updated documentation, ensuring the solution remained effective for future development teams.  
 
-Use this structure to effectively answer behavioral interview questions! 🎯  
+Use this structure to effectively answer behavioral interview questions while demonstrating long-term impact! 🎯  
 
 ---
 
