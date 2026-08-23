@@ -34,9 +34,22 @@
 \renewcommand{\acvHeaderIconSep}{\,}
 \renewcommand{\headersocialstyle}[1]{{\fontsize{6.3pt}{1em}\headerfont\color{text} #1}}
 
-% Footer date: month + year only, no day
-\newcommand{\enmonthyear}{%
-  \ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\ \number\year
+% Turkish dotted-İ fix: the class renders section titles, job titles, degree
+% names, etc. via \scshape (small caps), which relies on the font's automatic
+% lowercase-to-small-caps casing. Source Sans 3 doesn't carry a Turkish "locl"
+% variant of that feature, so it silently drops the dot from "i" (e.g. "Lideri"
+% renders as "LIDERI" instead of "LİDERİ"). There's no reliable font-level fix,
+% so instead we disable the automatic casing here and type the affected strings
+% in the content files as already-correct, manually-dotted Turkish upper case.
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\color{awesome} #1}}
+\renewcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\textcolor{text}{#1}}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{graytext} #1}}
+\renewcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\color{graytext} #1}}
+\renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\color{lighttext} #1}}
+
+% Turkish-formatted footer date (month + year only, no day)
+\newcommand{\turkishtoday}{%
+  \ifcase\month\or Ocak\or Şubat\or Mart\or Nisan\or Mayıs\or Haziran\or Temmuz\or Ağustos\or Eylül\or Ekim\or Kasım\or Aralık\fi\ \number\year
 }
 
 
@@ -46,8 +59,8 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,edge,right]{photo.png}
-\name{Emre}{CANCIOGLU}
-\position{Operational Technologies Supervisor{\enskip\cdotp\enskip}Industrial Digitalization \& AI}
+\name{Emre}{ÇANCIOĞLU}
+\position{OPERASYONEL TEKNOLOJİLER EKİP LİDERİ{\enskip\cdotp\enskip}ENDÜSTRİYEL DİJİTALLEŞME \& YAPAY ZEKA}
 \address{Kemal Atatürk Mah. 7822 Sok. 7/1, Menemen, İzmir, TÜRKİYE}
 
 \mobile{(+90) 536 702 43 66}
@@ -55,35 +68,25 @@
 \homepage{emrecancioglu.com}
 \github{emrecancioglu7}
 \linkedin{emrecancioglu}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
 
 \quote{\upshape\footnotesize
-  \textbf{\color{awesome}8+} Years Experience
+  \textbf{\color{awesome}8+} Yıl Deneyim
   \,\textbar\,
-  \textbf{\color{awesome}3} Facilities \textperiodcentered\ 2-Person Team
+  \textbf{\color{awesome}3} Tesis \textperiodcentered\ 2 Kişilik Ekip
   \,\textbar\,
-  \textbf{\color{awesome}57\%} Cost Reduction
+  \textbf{\color{awesome}\%57} Maliyet Azaltımı
   \,\textbar\,
-  \textbf{\color{awesome}3} Publications + \textbf{\color{awesome}6} Awards
+  \textbf{\color{awesome}3} Yayın + \textbf{\color{awesome}6} Ödül
 }
 
 
 %-------------------------------------------------------------------------------
 % PDF metadata (helps ATS parsing and looks professional in file properties)
 \hypersetup{
-  pdftitle={Emre Cancioglu - Resume},
-  pdfauthor={Emre Cancioglu},
-  pdfsubject={Operational Technologies Supervisor - Industrial Digitalization \& AI},
-  pdfkeywords={Operational Technologies, OT, Industry 4.0, IIoT, Digital Transformation, AI, Machine Learning, PLC, SCADA, MES}
+  pdftitle={Emre Çancıoğlu - Özgeçmiş},
+  pdfauthor={Emre Çancıoğlu},
+  pdfsubject={Operasyonel Teknolojiler Ekip Lideri - Endüstriyel Dijitalleşme ve Yapay Zeka},
+  pdfkeywords={Operasyonel Teknolojiler, OT, Endüstri 4.0, IIoT, Dijital Dönüşüm, Yapay Zeka, Makine Öğrenmesi, PLC, SCADA, MES}
 }
 
 \begin{document}
@@ -96,8 +99,8 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\enmonthyear}
-  {Emre CANCIOGLU~~~·~~~Resume}
+  {\turkishtoday}
+  {EMRE ÇANCIOĞLU~~~·~~~ÖZGEÇMİŞ}
   {\thepage}
 
 
@@ -105,13 +108,13 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/skills.tex}
-\input{resume/experience.tex}
-\input{resume/project.tex}
-\input{resume/honors.tex}
-\input{resume/presentation.tex}
-\input{resume/certification.tex}
-\input{resume/education.tex}
+\input{resume_tr/summary.tex}
+\input{resume_tr/skills.tex}
+\input{resume_tr/experience.tex}
+\input{resume_tr/project.tex}
+\input{resume_tr/honors.tex}
+\input{resume_tr/presentation.tex}
+\input{resume_tr/certification.tex}
+\input{resume_tr/education.tex}
 %-------------------------------------------------------------------------------
 \end{document}
