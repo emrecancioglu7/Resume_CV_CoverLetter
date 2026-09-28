@@ -1,2 +1,13 @@
 ECANCIOGLU.png
 photo.png
+photo_square.png
+
+# LaTeX build artifacts (regenerated on every compile)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+texput.log

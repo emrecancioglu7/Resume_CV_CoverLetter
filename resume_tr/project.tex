@@ -3,7 +3,7 @@
 %-------------------------------------------------------------------------------
 \cvsection{Projeler}
 
-{\small\itshape\color{graytext}Farklı roller kapsamında yürütülen çok sayıda projeden seçilmiş öne çıkan girişimler.\par}
+{\scriptsize\itshape\color{graytext}Farklı roller kapsamında yürütülen çok sayıda projeden seçilmiş öne çıkan girişimler.\par}
 \vspace{-1mm}
 
 %-------------------------------------------------------------------------------
@@ -16,12 +16,12 @@
     {PROJE LİDERİ} % Role
     {Enerji İzleme, Tahminleme ve Anomali Tespiti Platformu} % Event
     {Manisa, Türkiye} % Location
-    {2025 -- Devam Ediyor} % Date(s)
+    {Kasım 2025 -- Eylül 2026} % Date(s)
     {
       \begin{cvitems} % Description(s)
         \item {\textbf{200+} elektrik, su ve doğal gaz sayacını uzaktan okumalı sayaçlara çevirdi, altyapı veritabanını kurdu ve makine bazlı geçmiş enerji tüketimini, birim ürün başına enerji tüketimini ve karbon ayak izini görselleştiren bir enerji dashboard'u geliştirdi --- \textbf{SAP} ile entegre ederek tesisi \textbf{ISO 50001} sertifikasyonuna hazırladı.}
         \item {Kompresörden alınan basınçlı hava verisi, \textbf{MES}'ten gelen anlık ürün bilgisi ve \textbf{SAP}'den makine bazlı üretim teyit verilerini birleştiren bir hava kaçağı anomali tespit algoritması geliştirdi; erken müdahale ile kompresör enerji tüketimini azalttı.}
-        \item {Planlanan üretim miktarlarına dayalı ML tabanlı enerji tahminlemesi ekledi (\textbf{XGBoost}, LightGBM, GBM regresyonu, R\textsuperscript{2} değeri \textbf{0.944}'e kadar); bu çalışma 13. Uluslararası Avrupa Disiplinlerarası Bilimsel Araştırmalar Konferansı'nda hakemli araştırma olarak yayınlandı (Tiran, Arnavutluk, Mayıs 2026).}
+        \item {Planlanan üretim miktarlarına dayalı ML tabanlı enerji tahminlemesi ekledi (\textbf{XGBoost}, \textbf{LightGBM}, \textbf{GBM} regresyonu, R\textsuperscript{2} değeri \textbf{0.944}'e kadar); bu çalışma 13. Uluslararası Avrupa Disiplinlerarası Bilimsel Araştırmalar Konferansı'nda hakemli araştırma olarak yayınlandı (Tiran, Arnavutluk, Mayıs 2026).}
       \end{cvitems}
     }
 
@@ -30,12 +30,14 @@
     {PROJE LİDERİ } % Role
 {Maestro} % Event
     {Manisa, Türkiye} % Location
-    {Ara 2023 – Devam Ediyor} % Date(s)
+    {Ara 2023 – Mayıs 2026} % Date(s)
     {
       \begin{cvitems} % Description(s)
-        \item {\textbf{MES}, \textbf{SAP}, \textbf{PLC}, \textbf{IIoT} ve 3. parti verilerini fabrika genelinde birleştiren bir \textbf{Unified Namespace (UNS)} kurdu; \textbf{20 profesyonelden} oluşan bir ekibe liderlik etti. \textbf{3 fabrikada} yeni OT ağ altyapısını (NAT cihazları, OT switch'ler, firewall) kurdu ve \textbf{RBAC}/\textbf{LDAP} ile güvenli bir veri mimarisi tasarladı; izlenebilirliği \textbf{\%40} artırdı.}
-        \item {\textbf{Power BI} raporları ve gerçek zamanlı makine verisi, birim ürün bazlı test verileri ile gerçek zamanlı \textbf{SPC} tabanlı anomali uyarıları gösteren özel dashboard'lar ile uçtan uca izlenebilirlik sağladı --- fabrikanın dijital ikizini güçlendirdi ve Digital Product Passport'unu besledi; \textbf{Kafka}, \textbf{Node.js} ve \textbf{React} kullanarak raporlama süresini \textbf{\%60} hızlandırdı, yıllık \textbf{\$156K} tasarruf sağladı.}
-        \item {\textbf{YOLO} tabanlı iki bilgisayarlı görü güvenlik modeli entegre etti: robot çalışma alanına insan girdiğinde otomatik olarak durduran \textbf{AI-ODS} ve kör noktalarda forklift-yaya ile forklift-forklift çarpışmalarını hologram tarzı uyarılarla önleyen \textbf{AI-FDS} --- sıfır iş kazasına katkı sağladı.}
+        \item {\textbf{SAP}, \textbf{MES} ve \textbf{PLC}/\textbf{SCADA}/\textbf{DCS} tabanlı saha ekipmanlarını --- \textbf{OPC UA}, \textbf{MQTT}, \textbf{Kafka}, \textbf{Profinet}, \textbf{EtherNet/IP} ve \textbf{CC-Link} haberleşme protokolleriyle --- enerji analizörleri ve üçüncü parti sistemlerle birleştiren bir \textbf{Unified Namespace (UNS)} mimarisi kurarak fabrikanın dijital ikizini oluşturdu; \textbf{20 profesyonelden} oluşan bir ekibe liderlik ederek her akünün hammaddeden sevkiyata kadar tüm süreç ve test verilerini izlenebilir hale getirdi.}
+        \item {OT ağ mimarisinin tasarım ve devreye alma sürecine liderlik etti; üretim sürekliliğini/veri güvenliği süreçlerini korumak için \textbf{VLAN} segmentasyonu, \textbf{NAT} ve \textbf{endüstriyel firewall}'lar üzerinde \textbf{ISA-95}/Purdue modeli ve \textbf{IEC 62443} uyumlu \textbf{80+} yapılandırılmış siber güvenlik ve felaket kurtarma işlemi yürüttü.}
+        \item {\textbf{3 fabrikada} \textbf{46} veri kanalı ve \textbf{156} veritabanından (\textbf{MS SQL}, \textbf{MongoDB}, \textbf{PostgreSQL}) oluşan altyapıyı özel bir \textbf{Node.js}/\textbf{React}/\textbf{Redux}/\textbf{TypeScript} yazılım yığını ve \textbf{ETL}/stream-processing hatlarıyla kurarak tamamen manuel olan saha iş akışlarını otonomlaştırdı; operasyonel verimliliği \textbf{\%19}, veri güvenilirliğini \textbf{\%14} artırdı ve \textbf{OEM}/\textbf{AFM} müşterilerinden gelen veri isteklerine yanıt süresini \textbf{\%90} iyileştirdi.}
+        \item {\textbf{Power BI} raporları ve gerçek zamanlı makine verisi, birim ürün bazlı test verileri ile gerçek zamanlı \textbf{SPC} tabanlı anomali uyarıları gösteren özel dashboard'lar ile uçtan uca izlenebilirlik sağladı --- fabrikanın dijital ikizini güçlendirdi ve Digital Product Passport'unu besledi; raporlama süresini \textbf{\%60} hızlandırdı, yıllık \textbf{\$156K} tasarruf sağladı.}
+        \item {\textbf{YOLO} tabanlı iki \textbf{bilgisayarlı görü} güvenlik modeli entegre etti: robot çalışma alanına insan girdiğinde otomatik olarak durduran \textbf{AI-ODS} ve kör noktalarda forklift-yaya ile forklift-forklift çarpışmalarını hologram tarzı uyarılarla önleyen \textbf{AI-FDS} --- sıfır iş kazasına katkı sağladı.}
         \item {Titreşim ve sıcaklık sensörleri kullanarak kestirimci bakım uygulaması ekledi; \textbf{SAP} bağlantılı ekipman ömür takibi yaptı.}
       \end{cvitems}
     }

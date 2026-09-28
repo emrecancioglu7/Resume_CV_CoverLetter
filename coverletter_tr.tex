@@ -1,0 +1,133 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% Highlight placeholders that must be filled in per company/position before sending
+\newcommand{\ph}[1]{\textcolor{awesome-red}{\bfseries #1}}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Turkish dotted-İ fix: the class renders header position, footer and recipient
+% address via \scshape (small caps), which relies on the font's automatic
+% lowercase-to-small-caps casing. Source Sans 3 doesn't carry a Turkish "locl"
+% variant of that feature, so it silently drops the dot from "i" (e.g. "Lideri"
+% renders as "LIDERI" instead of "LİDERİ"). There's no reliable font-level fix,
+% so instead we disable the automatic casing here and type the affected strings
+% in this file as already-correct, manually-dotted Turkish upper case.
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\color{awesome} #1}}
+\renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\color{lighttext} #1}}
+\renewcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
+
+% Turkish-formatted full date (day + month + year) -- a cover letter needs the
+% exact date it was written/sent, unlike the résumé's month+year "last updated" style.
+\newcommand{\turkishfulldate}{%
+  \number\day\ \ifcase\month\or Ocak\or Şubat\or Mart\or Nisan\or Mayıs\or Haziran\or Temmuz\or Ağustos\or Eylül\or Ekim\or Kasım\or Aralık\fi\ \number\year
+}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{photo}
+\name{Emre}{ÇANCIOĞLU}
+\position{DİJİTALLEŞME VE YAPAY ZEKA EKİP LİDERİ{\enskip\cdotp\enskip}ENDÜSTRİYEL OTOMASYON}
+\address{Kemal Atatürk Mah. 7822 Sok. 7/1, Menemen, İzmir, TÜRKİYE}
+
+\mobile{(+90) 536 702 43 66}
+\email{emrecancioglu7@gmail.com}
+\homepage{emrecancioglu.com}
+\linkedin{emrecancioglu}
+
+\quote{``Dünyada görmek istediğin değişimin kendisi ol."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Şirket İnsan Kaynakları Ekibi}
+  {\ph{[Şirket Adresi]}}
+% The date on the letter, default is the date of compilation
+\letterdate{\turkishfulldate}
+% The title of the letter
+\lettertitle{\ph{[POZİSYON]} İçin İş Başvurusu}
+% How the letter is opened
+\letteropening{Sayın Yetkili,}
+% How the letter is closed
+\letterclosing{Saygılarımla,}
+% Any enclosures with the letter
+\letterenclosure[Ek]{Özgeçmiş}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+\vspace{-10mm}
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\turkishfulldate}
+  {EMRE ÇANCIOĞLU~~~·~~~ÖN YAZI}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Hakkımda}
+\textbf{9 yılı aşkın deneyime} sahip, sonuç odaklı bir \textbf{Dijitalleşme ve Yapay Zeka Ekip Lideri}yim; endüstriyel üretim ortamlarında OT dijitalleşmesi ve uygulamalı yapay zeka girişimlerine liderlik ediyorum. Şu anda \textbf{3 üretim tesisinde} dijital dönüşüm ve yapay zeka stratejisini yönetiyor; \textbf{kestirimci bakım}, \textbf{bilgisayarlı görü tabanlı güvenlik sistemleri}, \textbf{GenAI destekli otomasyon} ve \textbf{enerji \& sürdürülebilirlik analitiği} aracılığıyla ölçülebilir etki sağlıyorum. \textbf{PLC}, \textbf{SCADA} ve endüstriyel protokoller (\textbf{OPC UA}, \textbf{MQTT}, \textbf{Profinet}) konusunda derin uygulamalı uzmanlığımı, güçlü yazılım/bulut yetkinlikleriyle (\textbf{Node.js}, \textbf{React}, \textbf{Azure}/\textbf{AWS}, \textbf{Kubernetes}) dengeliyorum. Kariyerim boyunca fonksiyonlar arası dijital dönüşüm programlarına liderlik ettim, OT veri altyapısını \textbf{300+ yönetilen kanala} ölçeklendirdim ve şirket çapında bir \textbf{AI Elçileri programına} öncülük ettim --- tüm bunları yaparken yapay zeka destekli güvenlik bölgelerinde \textbf{4 yıl kesintisiz sıfır iş kazası} sürdürdüm.
+
+\lettersection{Neden \ph{[ŞİRKET ADI]}?}
+\ph{[ŞİRKET ADI]} ile çalışma fırsatı beni heyecanlandırıyor, çünkü sektördeki \textbf{inovasyon} ve \textbf{liderlik} itibarınızı takdir ediyorum. \textbf{Operasyonel mükemmelliği} yönlendirmek için \textbf{ileri teknolojileri} kullanma taahhüdünüz özellikle ilgimi çekiyor; \textbf{OT mühendisliği}, \textbf{yazılım geliştirme} ve \textbf{uygulamalı yapay zeka} arasında köprü kuran deneyimimin misyonunuzla iyi örtüştüğüne inanıyorum. \textbf{Dinamik}, \textbf{inovasyon odaklı} bir ortamda gelişmeye devam ederken dijital dönüşüm hedeflerinize katkı sağlamaya hazırım.
+
+\lettersection{Neden Ben?}
+OT ve yapay zeka kesişiminde \textbf{ölçülebilir sonuçlar} üretme konusundaki kanıtlanmış yeteneğim nedeniyle \ph{[POZİSYON]} rolü için ideal bir aday olduğuma inanıyorum. İnci GS Yuasa'da maliyetleri azaltan, operasyonel verimliliği artıran ve güvenlik sonuçlarını güçlendiren girişimlere liderlik ettim --- İnci Holding grup şirketleri çapında kazanılan çoklu \textbf{birincilik} ve bir \textbf{İnovasyon Özel Ödülü} ile tanındım, ayrıca uygulamalı makine öğrenmesi ve endüstriyel otomasyon alanında \textbf{4 bilimsel yayınla} bu birikimi destekledim. Uygulamalı OT/otomasyon uzmanlığımın, modern yazılım/bulut becerilerimin ve fonksiyonlar arası liderlik deneyimimin bileşimi, \ph{[ŞİRKET ADI]}'nın dijital dönüşüm ve yapay zeka benimseme sürecini hızlandırmasına yardımcı olacak eşsiz bir bakış açısı sunuyor.
+
+Becerilerimin ve deneyimlerimin ihtiyaçlarınızla nasıl örtüştüğünü görüşmek isterim. Başvurumu değerlendirdiğiniz için teşekkür ederim. \ph{[ŞİRKET ADI]}'nın devam eden başarısına katkı sağlama fırsatını dört gözle bekliyorum.
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+\includegraphics[scale=0.15]{ECANCIOGLU.png}
+\end{document}
