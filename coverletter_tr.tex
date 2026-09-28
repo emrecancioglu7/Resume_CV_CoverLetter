@@ -85,8 +85,8 @@
 \letteropening{Sayın Yetkili,}
 % How the letter is closed
 \letterclosing{Saygılarımla,}
-% Any enclosures with the letter
-\letterenclosure[Ek]{Özgeçmiş}
+% Any enclosures with the letter (printed manually after the signature below,
+% so the order is: closing phrase -> signature -> enclosure note)
 
 
 %-------------------------------------------------------------------------------
@@ -129,5 +129,11 @@ Becerilerimin ve deneyimlerimin ihtiyaçlarınızla nasıl örtüştüğünü g�
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter informations
 \makeletterclosing
-\includegraphics[scale=0.15]{ECANCIOGLU.png}
+
+\vspace{-8mm}
+\letternamestyle{Emre ÇANCIOĞLU}
+
+\vspace{6.8mm}
+
+\letterenclosurestyle{Ek: Özgeçmiş}
 \end{document}

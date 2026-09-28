@@ -78,8 +78,8 @@
 \letteropening{Dear Hiring Manager,}
 % How the letter is closed
 \letterclosing{Sincerely,}
-% Any enclosures with the letter
-\letterenclosure[Attached]{Resume}
+% Any enclosures with the letter (printed manually after the signature below,
+% so the order is: closing phrase -> signature -> enclosure note)
 
 
 %-------------------------------------------------------------------------------
@@ -122,5 +122,11 @@ I would welcome the opportunity to discuss how my skills and experiences align w
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter informations
 \makeletterclosing
-\includegraphics[scale=0.15]{ECANCIOGLU.png}
+
+\vspace{-8mm}
+\letternamestyle{Emre CANCIOGLU}
+
+\vspace{6.8mm}
+
+\letterenclosurestyle{Attached: Resume}
 \end{document}
