@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="110" viewBox="0 0 900 110">
+  <style>
+    .card { fill: #0b1220; stroke: #0395DE; stroke-width: 1.5; }
+    .num  { font: 700 34px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #0395DE; }
+    .lbl  { font: 500 13px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #c9d6e2; letter-spacing: 1px; }
+  </style>
+  <g text-anchor="middle">
+    <g opacity="0">
+      <rect class="card" x="10" y="10" width="205" height="90" rx="14"/>
+      <text class="num" x="112" y="55">9+</text><text class="lbl" x="112" y="80">YEARS · YIL</text>
+      <animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur="0.7s" begin="0s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0s" fill="freeze"/>
+    </g>
+    <g opacity="0">
+      <rect class="card" x="235" y="10" width="205" height="90" rx="14"/>
+      <text class="num" x="337" y="55">3</text><text class="lbl" x="337" y="80">FACILITIES · TESİS</text>
+      <animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur="0.7s" begin="0.2s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.2s" fill="freeze"/>
+    </g>
+    <g opacity="0">
+      <rect class="card" x="460" y="10" width="205" height="90" rx="14"/>
+      <text class="num" x="562" y="55">4</text><text class="lbl" x="562" y="80">PUBLICATIONS · YAYIN</text>
+      <animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur="0.7s" begin="0.4s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.4s" fill="freeze"/>
+    </g>
+    <g opacity="0">
+      <rect class="card" x="685" y="10" width="205" height="90" rx="14"/>
+      <text class="num" x="787" y="55">6</text><text class="lbl" x="787" y="80">AWARDS · ÖDÜL</text>
+      <animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur="0.7s" begin="0.6s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.6s" fill="freeze"/>
+    </g>
+  </g>
+</svg>

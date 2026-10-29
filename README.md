@@ -1,102 +1,142 @@
-# 🎓 Resume & Cover Letter - LaTeX Template  
+<div align="center">
 
-This repository contains a **LaTeX template** for creating a **professional resume and cover letter**. The templates are designed to be **clean, modern, and easily customizable**, ensuring your documents stand out in a professional manner.  
+<img src="assets/header.svg" alt="Emre Çancıoğlu — Resume & Cover Letter" width="100%"/>
 
----
+**🇬🇧 English** · [🇹🇷 Türkçe](#-türkçe)
 
-## ✨ Features  
-✔ **Modern and Clean Design** – Professional layout optimized for job applications.  
-✔ **Easy Customization** – Simply update your personal information to personalize the resume and cover letter.  
-✔ **LaTeX-Powered** – High-quality document formatting suitable for professional applications.  
+<img src="assets/stats.svg" alt="9+ years, 3 facilities, 4 publications, 6 awards" width="100%"/>
 
----
+![LaTeX](https://img.shields.io/badge/LaTeX-XeTeX-008080?logo=latex&logoColor=white)
+![Template](https://img.shields.io/badge/template-Awesome--CV-0395DE)
+![Languages](https://img.shields.io/badge/languages-EN%20%7C%20TR-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-## ✨ Demo
+</div>
 
-![Demo](/demo.png)
+<img src="assets/divider.svg" width="100%" alt=""/>
 
----
+## 🇬🇧 English
 
-## 🚀 Installation and Usage  
+A bilingual (EN / TR) **résumé and cover-letter** set built with LaTeX and the [Awesome-CV](https://github.com/posquit0/Awesome-CV) class. Content lives in small per-section files, so updating a single bullet point never means touching layout code.
 
-### 1️⃣ **Use on Overleaf**  
-If you prefer an **online LaTeX editor**, you can easily use these templates on Overleaf:  
+### 📄 Documents
 
-🔗 **[Open Overleaf Project](https://www.overleaf.com)**  
+| Document | English | Türkçe |
+|---|---|---|
+| Résumé (3 pages) | [`resume.pdf`](resume.pdf) · [`resume.tex`](resume.tex) | [`resume_tr.pdf`](resume_tr.pdf) · [`resume_tr.tex`](resume_tr.tex) |
+| Cover letter (1 page) | [`coverletter.pdf`](coverletter.pdf) · [`coverletter.tex`](coverletter.tex) | [`coverletter_tr.pdf`](coverletter_tr.pdf) · [`coverletter_tr.tex`](coverletter_tr.tex) |
 
-### 2️⃣ **Clone the Repository**  
-If you want to work locally, clone this repository.
+### 👀 Preview
 
+<table>
+  <tr>
+    <td align="center"><b>Résumé · EN</b><br/><a href="resume.pdf"><img src="assets/preview_resume_en.png" width="250" alt="Resume EN"/></a></td>
+    <td align="center"><b>Résumé · TR</b><br/><a href="resume_tr.pdf"><img src="assets/preview_resume_tr.png" width="250" alt="Resume TR"/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Cover letter · EN</b><br/><a href="coverletter.pdf"><img src="assets/preview_coverletter_en.png" width="250" alt="Cover letter EN"/></a></td>
+    <td align="center"><b>Cover letter · TR</b><br/><a href="coverletter_tr.pdf"><img src="assets/preview_coverletter_tr.png" width="250" alt="Cover letter TR"/></a></td>
+  </tr>
+</table>
 
-### 3️⃣ **Edit Your Resume and Cover Letter**  
-Open `resume.tex` and `coverletter.tex` in any LaTeX editor (or Overleaf) and replace the placeholder text with your details.  
+### 🗂 Repository structure
 
-### 4️⃣ **Compile the LaTeX Files**  
-To generate PDFs, compile the `.tex` files using:  
-
-```sh
-pdflatex resume.tex
-pdflatex coverletter.tex
+```text
+├── resume.tex / resume_tr.tex              # entry points (EN / TR)
+├── resume/        resume_tr/               # one file per section
+│   ├── summary.tex  skills.tex  experience.tex
+│   └── honors.tex  presentation.tex  certification.tex  education.tex
+├── coverletter.tex / coverletter_tr.tex    # cover-letter templates (EN / TR)
+├── awesome-cv.cls                          # template class (not modified)
+├── fonts/                                  # Source Sans 3, Roboto, FontAwesome
+└── assets/                                 # README graphics
 ```
 
-### 5️⃣ **View and Export**  
-Open the generated **PDF files** with any viewer and submit them for job applications!  
+### 🔧 Build
 
----
+XeTeX is required (custom fonts). Compile **twice** so references resolve:
 
-## 🎨 Customization Options  
+```sh
+xelatex resume.tex      && xelatex resume.tex
+xelatex resume_tr.tex   && xelatex resume_tr.tex
+xelatex coverletter.tex && xelatex coverletter.tex
+xelatex coverletter_tr.tex && xelatex coverletter_tr.tex
+```
 
-📝 **Personal Info** – Update your **name, contact details, and social media links**.  
-🎓 **Education & Experience** – Modify sections to reflect your **academic and work background**.  
-🛠 **Skills & Interests** – List your **technical skills, programming languages, and hobbies**.  
-📄 **Cover Letter** – Personalize your cover letter to highlight your **enthusiasm and qualifications**.  
-🎨 **Style & Colors** – Modify the **color scheme** and layout to match your preferences.  
+Or open the folder on [Overleaf](https://www.overleaf.com) and set the compiler to **XeLaTeX**.
 
----
+> Personal images (`photo.png`, `ECANCIOGLU.png`) are git-ignored. Put your own `photo.png` next to the `.tex` files before compiling.
 
-## 🤖 ChatGPT Prompt Example for Experience Sections  
+### ✍️ Using the cover letter as a template
 
-For **ATS-friendly** (Applicant Tracking System) resume bullet points, use this structure:  
+Everything that must change per application is highlighted in **bold red** in the PDF:
 
-📌 **"Accomplished [X] as measured by [Y] by doing [Z]."**  
+| Placeholder | Where |
+|---|---|
+| `[Company Address]` / `[Şirket Adresi]` | recipient block |
+| `[POSITION]` / `[POZİSYON]` | letter title, “Why Me?” section |
+| `[COMPANY NAME]` / `[ŞİRKET ADI]` | “Why …?” heading and body |
 
-Example:  
-✅ **"Increased server query response time by 15% by restructuring the API."**  
+Fill these in, recompile, and the red disappears only when the placeholders do. The `\ph{...}` macro (top of each cover-letter file) controls the highlight. To send a final version without red, replace its definition with `\newcommand{\ph}[1]{#1}`.
 
-### 🔹 Best Practices for Bullet Points  
-✔ Keep descriptions **concise and clear**.  
-✔ Use **strong action verbs** like *created, designed, debugged, negotiated, developed, managed*.  
-✔ Streamline bullet points that spill over onto the next line by **only 1-2 words**.
+### 🇹🇷 Turkish typesetting note
 
----
+The class renders some headings in small caps, which drops the dot of Turkish **İ**. The TR files override those styles and hand-type affected headings in dotted upper case (`DİJİTALLEŞME`, `MÜHENDİSİ`, …). Keep that in mind when adding new headings to Turkish files.
 
-## 🎤 STAR+x Method Interview Example  
+### 💡 Tips for bullet points
 
-The **STAR+x Method** is an enhanced approach to answering behavioral interview questions, where:  
-- **S** (Situation): Describe the context or problem.  
-- **T** (Task): Explain your responsibility in that situation.  
-- **A** (Action): Detail the steps you took to address the task.  
-- **R** (Result): Highlight the outcome and impact.  
-- **x** (Extended Impact): Show how the solution contributed to long-term sustainability or scalability.  
+- Structure: **“Accomplished [X] as measured by [Y] by doing [Z].”**
+- Start with strong verbs, keep every bullet to one or two lines, and avoid a last line with only one or two words.
+- Only claim numbers you can source; scope team results as team results.
 
-### Example Question: *"Tell me about a time you solved a challenging problem at work and ensured long-term success."*  
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-✅ **Situation**: In my previous role as a software engineer, our team faced a critical bug in production that was affecting 30% of users.  
-✅ **Task**: My responsibility was to identify the root cause and deploy a fix within 24 hours.  
-✅ **Action**: I analyzed logs, reproduced the issue in a staging environment, and discovered that a recent API update had introduced a breaking change. I implemented a rollback and coordinated with the API provider for a long-term fix.  
-✅ **Result**: The issue was resolved within 12 hours, reducing customer complaints by 90% and improving system stability.  
-✅ **Extended Impact (x)**: To prevent future occurrences, I introduced an automated regression test suite and updated documentation, ensuring the solution remained effective for future development teams.  
+## 🇹🇷 Türkçe
 
-Use this structure to effectively answer behavioral interview questions while demonstrating long-term impact! 🎯  
+**LaTeX** ve [Awesome-CV](https://github.com/posquit0/Awesome-CV) sınıfıyla hazırlanmış, iki dilli (TR / EN) **özgeçmiş ve ön yazı** seti. İçerik bölüm bölüm ayrı dosyalarda tutulur; tek bir maddeyi güncellemek için düzen koduna dokunmak gerekmez.
 
----
+### 📄 Belgeler
 
-## 💡 Contributing  
+| Belge | Türkçe | English |
+|---|---|---|
+| Özgeçmiş (3 sayfa) | [`resume_tr.pdf`](resume_tr.pdf) · [`resume_tr.tex`](resume_tr.tex) | [`resume.pdf`](resume.pdf) · [`resume.tex`](resume.tex) |
+| Ön yazı (1 sayfa) | [`coverletter_tr.pdf`](coverletter_tr.pdf) · [`coverletter_tr.tex`](coverletter_tr.tex) | [`coverletter.pdf`](coverletter.pdf) · [`coverletter.tex`](coverletter.tex) |
 
-Want to contribute? Feel free to submit a **pull request** with improvements! 🚀  
+Önizlemeler yukarıdaki **Preview** bölümündedir.
 
----
+### 🔧 Derleme
 
-## 📜 License  
+Özel yazı tipleri nedeniyle **XeLaTeX** gerekir. Çapraz başvuruların oturması için her dosyayı **iki kez** derleyin:
 
-This project is licensed under the **MIT License**.  
+```sh
+xelatex resume_tr.tex && xelatex resume_tr.tex
+xelatex coverletter_tr.tex && xelatex coverletter_tr.tex
+```
+
+Overleaf kullanıyorsanız derleyiciyi **XeLaTeX** olarak seçin.
+
+> Kişisel görseller (`photo.png`, `ECANCIOGLU.png`) `.gitignore` içindedir. Derlemeden önce kendi `photo.png` dosyanızı `.tex` dosyalarının yanına koyun.
+
+### ✍️ Ön yazıyı şablon olarak kullanma
+
+Her başvuruda değişmesi gereken yerler PDF'te **kalın kırmızı** görünür:
+
+| Yer tutucu | Nerede |
+|---|---|
+| `[Şirket Adresi]` | alıcı bloğu |
+| `[POZİSYON]` | mektup başlığı, “Neden Ben?” bölümü |
+| `[ŞİRKET ADI]` | “Neden …?” başlığı ve metin |
+
+Yer tutucuları doldurup yeniden derleyin. Kırmızı rengi tamamen kaldırmak isterseniz `\ph` makrosunu `\newcommand{\ph}[1]{#1}` olarak değiştirin.
+
+### 🔤 Türkçe dizgi notu
+
+Sınıf bazı başlıkları küçük büyük harfle (small caps) basar ve bu, Türkçe **İ** harfinin noktasını düşürür. TR dosyalarında bu stiller geçersiz kılınmış, ilgili başlıklar noktalı büyük harfle elle yazılmıştır (`DİJİTALLEŞME`, `MÜHENDİSİ` …). Türkçe dosyalara yeni başlık eklerken bunu unutmayın.
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+<div align="center">
+
+**📜 License** — MIT · Template class: [Awesome-CV](https://github.com/posquit0/Awesome-CV) (LPPL / MIT)
+
+</div>
