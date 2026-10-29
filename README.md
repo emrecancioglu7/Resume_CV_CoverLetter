@@ -1,19 +1,37 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Emre Çancıoğlu — Resume & Cover Letter" width="100%"/>
+<a href="https://emrecancioglu.com">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg" />
+  <img src="assets/hero-dark.svg" alt="Emre Çancıoğlu: Digitalization &amp; AI Supervisor. Bilingual résumé and cover letter built with LaTeX and Awesome-CV" width="100%" />
+</picture>
+</a>
 
 **🇬🇧 English** · [🇹🇷 Türkçe](#-türkçe)
 
-<img src="assets/stats.svg" alt="9+ years, 3 facilities, 4 publications, 6 awards" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg" />
+  <img src="assets/stats-dark.svg" alt="9+ years experience · 3 manufacturing plants · 4 publications · 6 awards" width="100%" />
+</picture>
 
-![LaTeX](https://img.shields.io/badge/LaTeX-XeTeX-008080?logo=latex&logoColor=white)
-![Template](https://img.shields.io/badge/template-Awesome--CV-0395DE)
-![Languages](https://img.shields.io/badge/languages-EN%20%7C%20TR-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
+<a href="resume.pdf"><img alt="Resume PDF" src="https://img.shields.io/badge/Resume-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
+<a href="resume_tr.pdf"><img alt="Özgeçmiş PDF" src="https://img.shields.io/badge/%C3%96zge%C3%A7mi%C5%9F-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
+<a href="https://emrecancioglu.com"><img alt="emrecancioglu.com" src="https://img.shields.io/badge/emrecancioglu.com-059669?style=for-the-badge"/></a>
+
+![LaTeX](https://img.shields.io/badge/LaTeX-XeTeX-008080?style=flat-square&logo=latex&logoColor=white)
+![Template](https://img.shields.io/badge/template-Awesome--CV-0395DE?style=flat-square)
+![Languages](https://img.shields.io/badge/languages-EN%20%7C%20TR-059669?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 </div>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg" />
+  <img src="assets/divider-dark.svg" alt="" width="100%" />
+</picture>
 
 ## 🇬🇧 English
 
@@ -45,14 +63,21 @@ A bilingual (EN / TR) **résumé and cover-letter** set built with LaTeX and the
 ├── resume.tex / resume_tr.tex              # entry points (EN / TR)
 ├── resume/        resume_tr/               # one file per section
 │   ├── summary.tex  skills.tex  experience.tex
-│   └── honors.tex  presentation.tex  certification.tex  education.tex
+│   └── honors.tex  presentation.tex  certification.tex  education.tex  project.tex
 ├── coverletter.tex / coverletter_tr.tex    # cover-letter templates (EN / TR)
 ├── awesome-cv.cls                          # template class (not modified)
 ├── fonts/                                  # Source Sans 3, Roboto, FontAwesome
-└── assets/                                 # README graphics
+├── assets/                                 # README graphics (SVGs are generated)
+└── scripts/build_readme_assets.py          # regenerates the animated SVGs
 ```
 
 ### 🔧 Build
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/build-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/build-light.svg" />
+  <img src="assets/build-dark.svg" alt="Build: one .tex file per section → resume.tex → xelatex twice → resume.pdf" width="100%" />
+</picture>
 
 XeTeX is required (custom fonts). Compile **twice** so references resolve:
 
@@ -89,7 +114,11 @@ The class renders some headings in small caps, which drops the dot of Turkish **
 - Start with strong verbs, keep every bullet to one or two lines, and avoid a last line with only one or two words.
 - Only claim numbers you can source; scope team results as team results.
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg" />
+  <img src="assets/divider-dark.svg" alt="" width="100%" />
+</picture>
 
 ## 🇹🇷 Türkçe
 
@@ -133,10 +162,22 @@ Yer tutucuları doldurup yeniden derleyin. Kırmızı rengi tamamen kaldırmak i
 
 Sınıf bazı başlıkları küçük büyük harfle (small caps) basar ve bu, Türkçe **İ** harfinin noktasını düşürür. TR dosyalarında bu stiller geçersiz kılınmış, ilgili başlıklar noktalı büyük harfle elle yazılmıştır (`DİJİTALLEŞME`, `MÜHENDİSİ` …). Türkçe dosyalara yeni başlık eklerken bunu unutmayın.
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/divider-light.svg" />
+  <img src="assets/divider-dark.svg" alt="" width="100%" />
+</picture>
 
 <div align="center">
 
-**📜 License** — MIT · Template class: [Awesome-CV](https://github.com/posquit0/Awesome-CV) (LPPL / MIT)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg" />
+  <img src="assets/footer-dark.svg" alt="Typeset with XeLaTeX and Awesome-CV" width="100%" />
+</picture>
+
+**📜 License**: MIT · Template class: [Awesome-CV](https://github.com/posquit0/Awesome-CV) (LPPL / MIT)
+
+<sub>README artwork is generated by <a href="scripts/build_readme_assets.py"><code>scripts/build_readme_assets.py</code></a>. To change the text, edit it there and run <code>python3 scripts/build_readme_assets.py</code>.</sub>
 
 </div>

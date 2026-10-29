@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="9+ years experience · 3 manufacturing plants · 4 publications · 6 awards"><title>9+ years experience · 3 manufacturing plants · 4 publications · 6 awards</title><style>text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; } .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; } 
+    .fade { opacity: 0; animation: fade .7s ease-out forwards; }
+    @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    .pulse { stroke-dasharray: 16 600; stroke-dashoffset: 616; animation: flow 2.4s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: 0; } }
+ 
+    .under { stroke-dasharray: 60; stroke-dashoffset: 60; animation: under .8s ease-out forwards; }
+    @keyframes under { to { stroke-dashoffset: 0; } }
+     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fade { opacity: 1; } }</style><g class="fade" style="animation-delay:0.00s">
+      <rect x="4" y="4" width="286" height="142" rx="14" fill="#ffffff" stroke="#d7e3dd" stroke-width="1.5"/>
+      <text x="147.0" y="68" font-size="44" font-weight="800" fill="#059669" text-anchor="middle" >9+</text>
+      <path d="M117.0 84h60" stroke="#059669" stroke-width="3" stroke-linecap="round" class="under" style="animation-delay:0.40s"/>
+      <text x="147.0" y="110" font-size="13" font-weight="700" fill="#17181a" text-anchor="middle" letter-spacing="1.5">YEARS EXPERIENCE</text>
+      <text x="147.0" y="130" font-size="12" font-weight="500" fill="#5b6168" text-anchor="middle" letter-spacing="1.5">YIL DENEYİM</text>
+    </g><g class="fade" style="animation-delay:0.15s">
+      <rect x="306" y="4" width="286" height="142" rx="14" fill="#ffffff" stroke="#d7e3dd" stroke-width="1.5"/>
+      <text x="449.0" y="68" font-size="44" font-weight="800" fill="#059669" text-anchor="middle" >3</text>
+      <path d="M419.0 84h60" stroke="#059669" stroke-width="3" stroke-linecap="round" class="under" style="animation-delay:0.55s"/>
+      <text x="449.0" y="110" font-size="13" font-weight="700" fill="#17181a" text-anchor="middle" letter-spacing="1.5">MANUFACTURING PLANTS</text>
+      <text x="449.0" y="130" font-size="12" font-weight="500" fill="#5b6168" text-anchor="middle" letter-spacing="1.5">ÜRETİM TESİSİ</text>
+    </g><g class="fade" style="animation-delay:0.30s">
+      <rect x="608" y="4" width="286" height="142" rx="14" fill="#ffffff" stroke="#d7e3dd" stroke-width="1.5"/>
+      <text x="751.0" y="68" font-size="44" font-weight="800" fill="#059669" text-anchor="middle" >4</text>
+      <path d="M721.0 84h60" stroke="#059669" stroke-width="3" stroke-linecap="round" class="under" style="animation-delay:0.70s"/>
+      <text x="751.0" y="110" font-size="13" font-weight="700" fill="#17181a" text-anchor="middle" letter-spacing="1.5">PUBLICATIONS</text>
+      <text x="751.0" y="130" font-size="12" font-weight="500" fill="#5b6168" text-anchor="middle" letter-spacing="1.5">YAYIN</text>
+    </g><g class="fade" style="animation-delay:0.45s">
+      <rect x="910" y="4" width="286" height="142" rx="14" fill="#ffffff" stroke="#d7e3dd" stroke-width="1.5"/>
+      <text x="1053.0" y="68" font-size="44" font-weight="800" fill="#059669" text-anchor="middle" >6</text>
+      <path d="M1023.0 84h60" stroke="#059669" stroke-width="3" stroke-linecap="round" class="under" style="animation-delay:0.85s"/>
+      <text x="1053.0" y="110" font-size="13" font-weight="700" fill="#17181a" text-anchor="middle" letter-spacing="1.5">AWARDS</text>
+      <text x="1053.0" y="130" font-size="12" font-weight="500" fill="#5b6168" text-anchor="middle" letter-spacing="1.5">ÖDÜL</text>
+    </g></svg>
