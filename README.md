@@ -16,14 +16,14 @@
   <img src="assets/stats-dark.svg" alt="9+ years experience · 3 manufacturing plants · 4 publications · 6 awards" width="100%" />
 </picture>
 
-<a href="resume.pdf"><img alt="Resume PDF" src="https://img.shields.io/badge/Resume-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
-<a href="resume_tr.pdf"><img alt="Özgeçmiş PDF" src="https://img.shields.io/badge/%C3%96zge%C3%A7mi%C5%9F-PDF-dc2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
-<a href="https://emrecancioglu.com"><img alt="emrecancioglu.com" src="https://img.shields.io/badge/emrecancioglu.com-059669?style=for-the-badge"/></a>
+<a href="resume.pdf"><img alt="Resume PDF" src="assets/badges/resume-pdf.svg"/></a>
+<a href="resume_tr.pdf"><img alt="Özgeçmiş PDF" src="assets/badges/ozgecmis-pdf.svg"/></a>
+<a href="https://emrecancioglu.com"><img alt="emrecancioglu.com" src="assets/badges/website.svg"/></a>
 
-![LaTeX](https://img.shields.io/badge/LaTeX-XeTeX-008080?style=flat-square&logo=latex&logoColor=white)
-![Template](https://img.shields.io/badge/template-Awesome--CV-0395DE?style=flat-square)
-![Languages](https://img.shields.io/badge/languages-EN%20%7C%20TR-059669?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+<img alt="LaTeX: XeTeX" src="assets/badges/latex.svg"/>
+<a href="https://github.com/posquit0/Awesome-CV"><img alt="Template: Awesome-CV" src="assets/badges/template.svg"/></a>
+<img alt="Languages: EN | TR" src="assets/badges/languages.svg"/>
+<img alt="License: MIT" src="assets/badges/license.svg"/>
 
 </div>
 
