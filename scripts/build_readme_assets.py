@@ -35,7 +35,7 @@ BASE_STYLE = """
     .pulse { stroke-dasharray: 16 600; stroke-dashoffset: 616; animation: flow 2.4s linear infinite; }
     @keyframes flow { to { stroke-dashoffset: 0; } }
 """
-REDUCED_MOTION = "@media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fade { opacity: 1; } }"
+REDUCED_MOTION = "@media (prefers-reduced-motion: reduce) { * { animation: none !important; } .fade { opacity: 1; } .write { stroke-dashoffset: 0 !important; } .stamp { opacity: 1; } }"
 
 
 def svg(width, height, body, style, title):
